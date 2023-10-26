@@ -25,7 +25,8 @@ function convertCase() {
 function countText() {
     var userInput = document.querySelector(".user-input").value;
     var charCount = userInput.length;
-    var wordCount = userInput.split(" ").length;
+    var wordCount = userInput.split("\n").join(" ");
+    wordCount = wordCount.split(" ").length;
     if (charCount === 0) {wordCount = 0;}
     document.querySelector(".word-count").textContent = "Palavras: " + wordCount;
     document.querySelector(".char-count").textContent = "Caracteres: " + charCount;
