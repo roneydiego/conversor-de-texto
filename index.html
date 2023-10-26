@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conversor de Texto</title>
+    <title>Converter para maiúscula, minúscula e capitalizar</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,7 +23,7 @@
 
     <section class="text-area">
         <div>
-            <input class="user-input" type="text">
+            <textarea class="user-input" type="text"></textarea>
             <div class="text-count">
                 <p class="word-count">Palavras: 0</p>
                 <p class="char-count">Caracteres: 0</p>
@@ -36,9 +36,7 @@
             <button class="option capitalize">Capitalizar</button> 
         </div>
 
-        <div class="response">
-            <p class="convertedText"></p>
-        </div>
+        <textarea class="response convertedText"></textarea>
     </section>
 
     <section class="footer">
