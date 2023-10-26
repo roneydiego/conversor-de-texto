@@ -21,6 +21,19 @@ function convertCase() {
     document.querySelector(".convertedText").textContent = convertedText;
 }
 
+
+function countText() {
+    var userInput = document.querySelector(".user-input").value;
+    var charCount = userInput.length;
+    var wordCount = userInput.split(" ").length;
+    if (chardCount === 0) {wordCount = 0;}
+    document.querySelector(".word-count").textContent = "Palavras: " + wordCount;
+    document.querySelector(".char-count").textContent = "Caracteres: " + charCount;
+}
+
+
 for (var i = 0; i < 3; i++) {
     document.querySelectorAll(".option")[i].addEventListener("click", convertCase);
 }
+
+document.querySelector(".user-input").addEventListener("keyup", countText);

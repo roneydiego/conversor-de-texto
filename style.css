@@ -13,6 +13,21 @@ body {
     padding: 50px;
 }
 
+.text-count {
+    display: flex;
+    gap: 50px;
+    align-self: flex-start;
+    color: #9DB2BF;
+}
+
+.word-count {
+    margin: 0;
+}
+
+.char-count {
+    margin: 0;
+}
+
 .user-input {
     width: 60vw;
     height: 20vh;
