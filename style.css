@@ -99,7 +99,6 @@ h1 {
 .buttons-options {
     display: flex;
     gap: 10px;
-    flex-wrap: wrap;
 }
 
 .convertedText {
@@ -124,11 +123,12 @@ h1 {
     .inicio {
         gap: 20px;
         flex-direction: column-reverse;
+        padding: 50px;
     }
 
     .option {
-        padding: 20px 5px;
-    }
+        padding: 0.5rem;
+    } 
 
     .response {
         height: 40vh;
